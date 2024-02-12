@@ -37,45 +37,37 @@ let generateGif = () => {
           }
         };
         container.append(img);
+        document.querySelector(".wrapper").append(container);
+
         let newBtn = document.createElement("button");
         newBtn.innerHTML = "Copy Link";
 
-        container.append(newBtn);
-        document.querySelector(".wrapper").append(container);
+        // Add click event listener to the button
+        newBtn.addEventListener("click", function () {
+          // Get the link text
+          let link = "htexts"; // Replace this with your actual link
+
+          // Copy link to clipboard
+          navigator.clipboard
+            .writeText(link)
+            .then(() => {
+              // If successful, provide feedback
+              alert("Link copied to clipboard: " + link);
+            })
+            .catch((err) => {
+              // If an error occurs, log it to console
+              console.error("Failed to copy: ", err);
+            });
+        });
+
+        // Append the button to the container (assuming "container" is defined somewhere)
+        container.appendChild(newBtn);
       });
     })
     .catch((error) => {
       console.error("Error fetching GIFs:", error);
       // Display an error message or handle the error as needed
     });
-  // copy link button
-  let copyBtn = document.createElement("button");
-  copyBtn.innerText = "Copy Link";
-  copyBtn.onclick = () => {
-    //Append the obtained ID default URL
-    let copyLink = "https://media4.giphy.com/media/${gif.id}/giphy.mp4";
-    //copy text inside the text field
-    navigator.clipboard
-      .write(copyLink)
-      .then(() => {
-        alert("GIF copied to clipboard");
-      })
-      .catch(() => {
-        //if navigator is not supported
-        alert("GIF coppied to clipboard");
-        //create temporary input
-        let hiddenInput = document.createElement("input");
-        hiddenInput.setAttribute("type", "text");
-        Document.body.appendChild(hiddenInput);
-        hiddenInput.value = copyLink;
-        //Select input
-        hiddenInput.select();
-        //Copy the value
-        document.execCommand("copy");
-        //remove input
-        document.body.removeChild(hiddenInput);
-      });
-  };
 };
 
 // Add event listener to search button to trigger GIF generation
