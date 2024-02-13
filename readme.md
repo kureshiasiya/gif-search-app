@@ -9,7 +9,8 @@ GIPHY API
 ![alt text](<hii screenshot-3.png>)
 ![alt text](<welcome screenshot.PNG>)
 
-THINGS TO IMPROVE
+#THINGS TO IMPROVE
+
 Personalization Features: Introduce features that personalize the user experience, such as recommending GIFs based on past searches, user preferences, or trending topics.
 
 Expanded Content: Expand the content available in your app by integrating with multiple GIF providers or curating content from user submissions. This could increase the variety and relevance of GIFs available to users.
