@@ -9,6 +9,7 @@ h1 {
   margin-top: 50px;
   text-align: center;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -113,12 +114,11 @@ p {
   border-radius: 50%;
   border-top-color: #45a049;
   position: absolute;
-  top: calc(50% + 50px); /* Adjusted position to be below search box */
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: spin 3s infinite;
 }
-
 @keyframes spin {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
