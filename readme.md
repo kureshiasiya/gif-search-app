@@ -1,12 +1,13 @@
-GifQuest
+#GifQuest
+
 Welcome to our GIF Search App! This app allows you to easily search for and discover GIFs to express yourself in conversations, social media posts, and more. With a user-friendly interface and a vast library of GIFs at your fingertips, finding the perfect GIF has never been easier.
 
 Technologies Used:
 JavaScript
 HTML/CSS
 GIPHY API
-
 ![alt text](<hii screenshot-3.png>)
+![alt text](<welcome screenshot.PNG>)
 
 THINGS TO IMPROVE
 Personalization Features: Introduce features that personalize the user experience, such as recommending GIFs based on past searches, user preferences, or trending topics.
