@@ -1,4 +1,4 @@
-#GifQuest
+# GifQuest
 
 Welcome to our GIF Search App! This app allows you to easily search for and discover GIFs to express yourself in conversations, social media posts, and more. With a user-friendly interface and a vast library of GIFs at your fingertips, finding the perfect GIF has never been easier.
 
