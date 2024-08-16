@@ -149,7 +149,9 @@ p {
     max-width: 90%;
     margin: 50px auto;
   }
-
+  h1 {
+    font-size: 20px;
+  }
   .search-container {
     flex-direction: column;
   }
