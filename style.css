@@ -146,7 +146,7 @@ p {
 @media only screen and (max-width: 1080px) {
   /* Adjustments for smaller screens */
   .box {
-    max-width: 90%;
+    max-width: 80%;
     margin: 50px auto;
   }
   h1 {
